@@ -33,6 +33,7 @@ textarea::placeholder {
 textarea#title {
     font-weight: 500;
     height: 30px;
+    width: calc(100% - 50px);
 }
 
 textarea#body {
