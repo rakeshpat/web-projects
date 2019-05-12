@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: xx-large;
+    color: #ceb69b;
+}
+
+#notes-container {
+    height: calc(100% - 110px);
+    background: #f8eee7;
+}
+
+textarea {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-weight: normal;
+    color: #ceb69b;
+}
+
+textarea#title {
+    font-weight: 500;
+    height: 30px;
+}
+
+textarea#body {
+    height: calc(100% - 30px);
+}
+
+#note-headings {
+    background:rgba(75, 50, 0, 0.1);
+    overflow-y: scroll;
+}
+
+a.list-group-item {
+    background: none;
+    border: none;
+    color: rgba(75, 50, 0, 0.85);
+    transition: ease 0.3s;
+}
+
+a.list-group-item:first-child, a.list-group-item:last-child {
+    border-radius: 0;
+}
+
+a.list-group-item.active {
+    background: rgba(75, 50, 0, 0.1);
+    color: black;
+    font-weight: 500;
+}
+
+a.list-group-item:hover {
+    background: rgba(75, 50, 0, 0.15);
+    text-decoration: none;
+    color: black;
+}
