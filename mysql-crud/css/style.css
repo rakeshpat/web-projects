@@ -1,0 +1,77 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+    background: darkslateblue;
+}
+
+h1 {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+h2 {
+    color: darkslateblue;
+    font-weight: 700;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 4em;
+    font-weight: 700;
+}
+
+ul.nav li.nav-item a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+ul.nav li.nav-item a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.code {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 0.9em;
+    background: lavender;
+    padding: 20px;
+    border-left: 5px solid darkslateblue;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.code em {
+    font-style: normal;
+    color: sienna;
+}
+
+section p a {
+    color: darkslateblue;
+    background: lavender;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+section p a:hover {
+    text-decoration: none;
+    background: lavenderblush;
+    position: relative;
+    top: 1px;
+}
+
+section#read div.code {
+    background: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid rgba(0, 0, 0, 0.4);
+}
+
+section#read {
+    background: papayawhip;
+}
