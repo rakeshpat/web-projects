@@ -1,7 +1,3 @@
-<?php
-    require_once 'includes/crud.php';
-?>
-
 <!doctype html>
 <html lang="en">
     <head>
