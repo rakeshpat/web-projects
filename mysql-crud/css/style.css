@@ -67,11 +67,23 @@ section p a:hover {
     top: 1px;
 }
 
-section#read div.code {
+section div.code {
     background: rgba(0, 0, 0, 0.1);
     border-left: 5px solid rgba(0, 0, 0, 0.4);
 }
 
+section#create {
+    background: #e4ffde;
+}
+
 section#read {
-    background: papayawhip;
+    background: #d0fffe;
+}
+
+section#update {
+    background: #ffe7d3;
+}
+
+section#delete {
+    background: #ffeaea
 }
