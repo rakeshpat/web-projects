@@ -33,9 +33,7 @@ ul.nav li.nav-item a:hover {
 .code {
     font-family: 'Overpass Mono', monospace;
     font-size: 0.9em;
-    background: lavender;
     padding: 20px;
-    border-left: 5px solid darkslateblue;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -72,9 +70,14 @@ section div.code {
     border-left: 5px solid rgba(0, 0, 0, 0.4);
 }
 
-section#create {
-    background: #e4ffde;
+section#setup div.code {
+    background: lavender;
+    border-left: 5px solid darkslateblue;
 }
+
+section#create {
+     background: #e4ffde;
+ }
 
 section#read {
     background: #d0fffe;
