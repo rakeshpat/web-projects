@@ -1,14 +1,8 @@
 <?php
 
-$login = 'wsuser';
-$password = 'wsbodet';
+require_once 'config/auth.php';
 
-$client = new SoapClient(
-    'http://' . urlencode($login) . ':' . urlencode($password) . '@localhost:8089/open/services/ClockingService?wsdl', [
-        'login' => $login,
-        'password' => $password
-    ]
-);
+$service = 'ClockingService';
 
 $populationFilter = '';
 $groupFilter = '';
