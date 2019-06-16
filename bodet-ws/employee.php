@@ -1,8 +1,7 @@
 <?php
 
-require_once 'config/auth.php';
-
 $service = 'EmployeeService';
+require_once 'config/auth.php';
 
 $date = new DateTime("now");
 
@@ -18,9 +17,9 @@ $parameters = [
     ]
 ];
 
-$results = $client->__soapCall('exportEmployeesList', array(
+$results = $client->__soapCall('exportEmployeesList', [
     'parameters' => $parameters
-));
+]);
 
 ?>
 

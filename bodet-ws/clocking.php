@@ -1,8 +1,7 @@
 <?php
 
-require_once 'config/auth.php';
-
 $service = 'ClockingService';
+require_once 'config/auth.php';
 
 $populationFilter = '';
 $groupFilter = '';
