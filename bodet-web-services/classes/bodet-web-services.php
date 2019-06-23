@@ -68,7 +68,7 @@ class BodetWebServices {
                                 }
                             }
 
-                            $output[count($output) - 1] = ']';
+                            $output[count($output) - 1] = '];';
 
                             $output = implode('<br>', $output);
                             echo '<pre>'.$output.'</pre>';
@@ -84,6 +84,22 @@ class BodetWebServices {
 
         if ($success === false) {
             echo '<pre>The function '.$func.' is not a part of this web service.</pre>';
+        }
+    }
+
+    /*
+     * Returns the result of the SOAP function call
+     * @param string $func Function to invoke
+     * @param array $params Parameters to pass to the function to invoke
+     */
+    public function call($func, $params) {
+        try {
+            return $this->client->__soapCall($func, [
+                'parameters' => $params
+            ]);
+        } catch (Exception $e) {
+            echo '<pre>'.$e.'</pre>';
+            exit();
         }
     }
 
